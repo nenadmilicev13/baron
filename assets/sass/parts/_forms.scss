@@ -1,0 +1,16 @@
+/*--------------------------------------------------------------
+## Forms
+--------------------------------------------------------------*/
+input[type='text'],
+input[type='email'],
+input[type='tel'] {
+    padding: 5px 0;
+    border: 1px solid $dark;
+    width: 100%;
+    background-color: transparent;
+    color: $dark;
+
+    &::placeholder {
+        color: $light;
+    }
+}

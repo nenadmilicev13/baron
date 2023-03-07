@@ -1,0 +1,18 @@
+# ignore log files
+*.log
+
+# ignore compiled files
+dist
+.sass-cache
+style.css
+style.css.map
+
+# ignore Editor files
+.idea
+.vscode
+index.sublime-workspace
+.sublime-gulp.cache
+
+# ignore node_modules
+node_modules
+vendor

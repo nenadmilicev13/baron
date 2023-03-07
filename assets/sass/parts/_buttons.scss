@@ -1,0 +1,17 @@
+/*--------------------------------------------------------------
+## Buttons
+--------------------------------------------------------------*/
+.btn {
+    display: inline-block;
+    transition: $dur $ease;
+    font-size: 12px;
+    text-align: center;
+    font-family: $font-main;
+    border: none;
+    outline: none;
+
+    &:active,
+    &:focus {
+        outline: none;
+    }
+}

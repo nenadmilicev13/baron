@@ -1,0 +1,21 @@
+/*--------------------------------------------------------------
+## Animations
+--------------------------------------------------------------*/
+
+@include mq($phone + 1, min) {
+    .is-animate {
+        backface-visibility: hidden;
+        opacity: 0;
+        will-change: transform;
+    }
+
+    .slide-up {
+        transform: translate3d(0, 200px, 0);
+        transition: 1000ms ease-in-out;
+    }
+
+    .is-visible {
+        transform: translate3d(0, 0, 0) scale(1);
+        opacity: 1;
+    }
+}

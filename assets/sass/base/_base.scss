@@ -1,0 +1,23 @@
+/*--------------------------------------------------------------
+## Base Layout
+--------------------------------------------------------------*/
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	@include font-smoothing(antialiased);
+	height: 100%;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	transition: 1000ms ease;
+}
+
+.page-template-homepage {
+	background-color: $white-lilac;
+}
