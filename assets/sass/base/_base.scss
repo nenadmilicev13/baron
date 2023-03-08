@@ -16,8 +16,11 @@ html {
 
 body {
 	transition: 1000ms ease;
+	font-family: 'ivypresto-headline', serif;
+	font-weight: 300;
+	font-style: normal;
 }
 
-.page-template-homepage {
+.home {
 	background-color: $white-lilac;
 }
