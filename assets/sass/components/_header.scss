@@ -12,6 +12,16 @@
 	transform: translateY(-20px);
 	z-index: 99999;
 	position: relative;
+
+	@include mq($tablet-xs) {
+        padding: 10px 0 0 20px;
+    }
+
+	@include mq($phone) {
+        img {
+			width: 70%;
+		}
+    }
 }
 
 .header__container-box {
@@ -45,6 +55,12 @@
 		height: 100vh;
 		object-fit: cover;
 	}
+	// ------------------------------------------------
+	// background-image: url('assets/images/demo/2.jpg');
+	// background-repeat: no-repeat;
+	// height: 100vh;
+	// object-fit: cover;
+	// width: 100%;
 }
 
 .primary-menu {

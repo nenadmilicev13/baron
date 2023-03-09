@@ -27,13 +27,11 @@ get_header(); ?>
 							<ul class="main-section__right-submenu sub-active">
 								<li><a class="main-section__right-submenu-link" href="javascripttt:;">Ženska moda</a></li>
 								<li><a class="main-section__right-submenu-link" href="javascripttt2:;">Venčanice</a></li>
-								<li><a class="main-section__right-submenu-link" href="javascripttt3:;">Aksesoar</a></li>
 							</ul>
 						</li>
 						<li class="list"><a data-color="#eff7ff" data-image="men" class="tab_link test" href="#men">Men</a>
 							<ul class="main-section__right-submenu">
 								<li><a class="main-section__right-submenu-link" href="javascript1:;">Muška moda</a></li>
-								<li><a class="main-section__right-submenu-link" href="javascript2:;">Odela</a></li>
 							</ul>
 						</li>
 						<li class="list"><a data-color="#faf3ed" data-image="events" class="tab_link test" href="#events">Events</a>

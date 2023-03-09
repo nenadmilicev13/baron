@@ -32,6 +32,7 @@ const NavBtn = {
 			delay: .4,
 			stagger: .3,
 			y: 0,
+            autoAlpha: 1,
             ease: "Sine.easeOut"
         });
 
