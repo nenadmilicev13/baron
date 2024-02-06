@@ -1,0 +1,162 @@
+.site-footer {
+    padding: 0 60px;
+    background-color: $nero;
+    position: relative;
+    z-index: 100;
+
+    @include mq($xl) {
+       padding: 0 30px;
+       margin-left: 0;
+    }
+
+    @include mq($lg) {
+        height: auto;
+    }
+
+    @include mq($md) {
+        padding: 50px 15px 30px;
+        z-index: 0;
+    }
+}
+
+.footer__container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 66vh;
+
+    @include mq($lg) {
+        height: auto;
+        display: block;
+        padding: 7vh 4vw;
+        width: 100%;
+    }
+
+    @include mq($ls) {
+        padding: 10vh 0;
+    }
+
+    @include mq($md) {
+       padding: 0;
+    }
+}
+
+.footer__wrap {
+    display: flex;
+    align-items: baseline;
+    margin-top: 60px;
+
+    @include mq($lg) {
+        margin-top: 0;
+        margin-bottom: 60px;
+    }
+
+    @include mq($md) {
+        display: block;
+    }
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    ul {
+        margin-bottom: 50px;
+
+        li {
+            padding-bottom: 1.5rem;
+        }
+
+        a {
+            color: $white;
+            font-size: 6.5vh;
+            line-height: 1.09;
+            letter-spacing: .025em;
+
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+    }
+
+
+    @include mq($xxl) {
+        ul {
+            margin-bottom: 50px;
+
+            li {
+                padding-bottom: 1rem;
+            }
+        }
+    }
+
+    @include mq($xl) {
+        ul {
+            margin-bottom: 10px;
+        }
+    }
+
+    @include mq($lg) {
+        ul {
+            li {
+                a {
+                    font-size: 5.5vh;
+                }
+            }
+        }
+    }
+}
+
+.footer-left__bottom-item {
+    margin-bottom: 24px;
+
+    span, a {
+        font-size: 2vh;
+        line-height: 1.333;
+        opacity: 0.8;
+        color: $white;
+        font-family: 'Switzer-Light';
+        display: block;
+    }
+
+    @include mq($lg) {
+        span, a {
+            font-size: 1.5vh;
+        }
+        
+    }
+
+    @include mq($md) {
+        margin-bottom: 10px;
+    }
+}
+
+.footer-right {
+    padding-left: 100px;
+    ul {
+        li {
+            padding-bottom: 15px;
+
+            a {
+                font-size: 2.5vh;
+                line-height: 1.2;
+                color: $white;
+                letter-spacing: 0.025em;
+
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+
+    @include mq($md) {
+        padding-left: 0;
+        margin-bottom: 50px;
+    }
+}
+
+  
+  

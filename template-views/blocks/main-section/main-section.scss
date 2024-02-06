@@ -1,0 +1,141 @@
+// /*--------------------------------------------------------------
+// ## new-block
+// --------------------------------------------------------------*/
+
+
+.main-section__hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+
+    @include mq($lg) {
+        height: 93vh;
+        margin-top: 0;
+        overflow-y: hidden;
+    }
+}
+
+.main-section__hero-image-main {
+    position: absolute;
+    
+    img {
+        width: 90%;
+        transform: translate(-105px, 77px);
+    }
+
+    @include mq($lg) {
+        img {
+            width: 100%;
+            transform: translate(-142px, 77px);
+        }
+    }
+
+    @include mq($md) {
+        img {
+            transform: translate(0);
+        }
+    }
+}
+
+#section0 {
+    background-color: $nero;
+}
+
+.main-section__hero-image-line {
+    img {
+        width: 90%;
+        transform: translateX(40px);
+    }
+
+    @include mq($lg) {
+        img {
+            width: 100%;
+        }
+    }
+
+    @include mq($md) {
+        display: none;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
+.main-section__title { 
+    position: absolute;
+
+    h1 {
+        font-size: 5.1vw;
+        color: $white;
+        letter-spacing: 3.5px;
+        line-height: 1;
+    }
+
+    span {
+        display: block;
+        padding-left: 8.5vw;
+    }
+
+    @include mq($lg) {
+        top: auto;
+        left: auto;
+
+        h1 {
+            font-size: 11.1vw;
+        }
+
+        span {
+            padding-left: 14.5vw;
+        }
+    }
+
+    @include mq($md) {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        h1 {
+            font-size: 15.5vw;
+        }
+
+        span {
+            padding-left: 22.5vw;
+        }
+    }
+}
+
+.main-section__signature {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5vh;
+
+    @include mq($lg) {
+        bottom: 10vh;
+    }
+
+    @include mq($md) {
+        bottom: 7vh;        
+    }
+}
+
+.main-section__since {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 3vh;
+
+    @include mq($lg) {
+        bottom: 6vh;
+    }
+
+    @include mq($md) {
+        bottom: 3vh;
+    }
+}
+

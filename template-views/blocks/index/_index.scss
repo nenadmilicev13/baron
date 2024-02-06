@@ -1,0 +1,132 @@
+.index-content {
+    width: 40vw;
+
+    @include mq($lg) {
+       width: 100vw;
+    }   
+}
+
+.index-card {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+
+    @include mq($lg) {
+       flex-wrap: wrap;
+       grid-gap: 70px;
+       height: auto;
+       justify-content: center;
+    }
+
+    @include mq($ls) {
+        grid-gap: 58px;
+    }
+
+    @include mq($md) {
+        margin-top: 2vh !important;
+        display: block;
+        padding: 0 15px;
+    }
+}
+
+.index-card__container {
+    position: relative;
+    width: 24vw;
+    z-index: 1;
+    margin-right: 40px;
+
+    &:last-of-type {
+        margin-right: 0;
+    }
+   
+    @include mq($lg) {
+        flex: 40%;
+        max-width: 40%;
+        margin-right: 0;
+    }
+
+    @include mq($md) {
+        flex: 100%;
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 8vh;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.index-card__item {
+    transition: $dur $ease;
+    text-align: center;
+
+    h2 {
+        font-size: 1.7vw;
+        line-height: 1.18;
+        letter-spacing: 0.025em;
+        white-space: normal;
+        z-index: 999;
+        position: relative;
+        width: fit-content;
+        margin: 2vh auto;
+        transition: $dur $ease;
+        display: flex;
+        align-items: center;
+        font-weight: 300;
+
+        &::after {
+            @include font-styles;
+            content: font-char(arrow-right);
+            margin-left: 25px;
+            font-size: 25px;
+            transition: $dur $ease;
+            cursor: pointer;
+            transform: translateX(-10px);
+            line-height: 1;
+        }
+    }
+
+    img {
+        border-radius: 50%;
+        width: 100%;
+    }
+
+    @include hover {
+        opacity: 0.8;
+
+        h2 {
+            &::after {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    }
+
+    @include mq($lg) {
+        max-width: 100%;
+
+        img {
+            width: 100%;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 33px;
+
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+    @include mq($md) {
+        h2 {
+            font-size: 26px;
+
+            &::after {
+                font-size: 17px;
+            }
+        }
+    }
+}

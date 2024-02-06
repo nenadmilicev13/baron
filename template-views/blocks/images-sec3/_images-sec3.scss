@@ -1,0 +1,88 @@
+.f-img5__container {
+    position: relative;
+    top: 42%;
+    width: 45vh;
+    height: 80vh;
+
+    @include mq($lg) {
+        @include responsive-style(0, translateY(0), 70vw, 100vw, 0 auto 40px);
+    }
+    
+    @include mq($ls) {
+        @include responsive-style(0, translateY(0), 93vw, 134vw, 0 auto 40px);
+    }
+}
+
+.f-img5__wrp {
+    @include full-size;
+
+    
+    .f-img5 {
+        height: 58vh;
+        width: 45vh;
+    }
+
+    @include mq($lg) {
+        @include responsive-img-style('.f-img5', 100%, 100%);
+    }
+}
+
+.f-img6__container {
+    position: relative;
+    top: 6%;
+    left: 0;
+    width: 53vh;
+    height: 75vh;
+
+    @include mq($lg) {
+        @include responsive-style(0, translateY(0), 70vw, 100vw, 0 auto 40px);
+    }
+    
+    @include mq($ls) {
+        @include responsive-style(0, translateY(0), 93vw, 134vw, 0 auto 40px);
+    }
+}
+
+.f-img6__wrp {
+    @include full-size;
+
+    
+    .f-img6 {
+        height: 75vh;
+        width: 53vh;
+    }
+
+    @include mq($lg) {
+        @include responsive-img-style('.f-img6', 100%, 100%);
+    }
+}
+
+.f-img7__container {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 39vh;
+    height: 58vh;
+
+    @include mq($lg) {
+        @include responsive-style(0, translateY(0), 70vw, 100vw, 0 auto 40px);
+    }
+    
+    @include mq($ls) {
+        @include responsive-style(0, translateY(0), 93vw, 134vw, 0 auto 40px);
+    }
+}
+
+.f-img7__wrp {
+    @include full-size;
+
+    
+    .f-img7 {
+        height: 58vh;
+        width: 39vh;
+    }
+
+    @include mq($lg) {
+        @include responsive-img-style('.f-img7', 100%, 100%);
+    }
+}

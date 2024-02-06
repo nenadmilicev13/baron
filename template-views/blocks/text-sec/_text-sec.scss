@@ -1,0 +1,117 @@
+.project__list {
+    li {
+        font-size: 3.8vh;
+        padding: 20px 0;
+        border-bottom: 1px solid $white-lilac;
+    }
+
+    @include mq($lg) {
+        li {
+            font-size: 2.2vh;
+        }
+    }
+}
+
+.project__text {
+    white-space: normal;
+    margin-bottom: 80px;
+
+    p {
+        font-size: 2.2vh;
+        line-height: 1.4;
+        font-family: 'Switzer';
+        color: $nero;
+        margin-bottom: 25px;
+    }
+
+    &.columns {
+        column-count: 1;
+        column-gap: 24px;
+    }
+
+    @include mq($lg) {
+        &.columns {
+            margin: 0;
+            column-gap: 0;
+            column-count: 0;
+        }
+
+        p {
+            font-size: 2.3vw;
+        }
+    }
+
+    @include mq($md) {
+        margin-bottom: 40px;
+        display: block;
+
+        p {
+            font-size: 4.3vw;
+        }
+    }
+}
+
+.project__text--flex {
+    display: flex;
+    justify-content: space-between;
+
+    @include mq($lg) {
+        gap: 18vw;
+    }
+
+    @include mq($ls) {
+        display: block;
+    }
+}
+
+.project__secondary__text {
+    width: 80vh;
+    margin: 19vh 0;
+    padding: 0 4vw;
+
+    @include mq($lg) {
+        width: 100vw;
+        margin: 8vh 0;
+        padding: 0 11vw;
+    }
+
+    @include mq($ls) {
+        margin: 7vh 0;
+    }
+
+    @include mq($md) {
+        padding: 0 15px;
+        margin: 5vh 0 0;
+    }
+}
+
+.project__third__text {
+    margin-top: 18vh;
+    width: 36vw;
+    margin: 14vh 6vw 0 0;
+
+    @include mq($xxl) {
+        width: 45vw;
+    }
+
+    @include mq($lg) {
+        width: 100%;
+        margin: 11vh 0;
+        padding: 0 18vw;
+    }
+
+    @include mq($md) {
+        margin: 7vh 0;
+        padding: 0 15px;
+    }
+}
+
+.project__secondary__title {
+    font-size: 48px;
+    white-space: normal;
+    margin-bottom: 24px;
+
+    @include mq($md) {
+        font-size: 37px;
+    }
+}

@@ -1,0 +1,47 @@
+/*--------------------------------------------------------------
+## Main Variables
+--------------------------------------------------------------*/
+// Fonts
+$font-default-serif: 'Switzer';
+$font-default-sans-serif: 'Switzer';
+
+$font-main: $font-default-serif;
+$font-second: $font-default-serif;
+
+$site-fonts: (
+	'font-main': $font-main,
+	'font-second': $font-second,
+) !default;
+
+// Colors
+$white: #fff;
+$black: #000;
+$white-lilac: #f5eafa;
+$nero: #201f1f;
+$purple: #f5eafa;
+$silver: #c3c3c3;
+
+$site-colors: (
+	'white': $white,
+	'black': $black,
+	'white-lilac': $white-lilac,
+	'nero': $nero,
+	'purple': $purple
+) !default;
+
+// Transitions
+$dur: 350ms;
+$ease: ease;
+
+/*--------------------------------------------------------------
+## Breakpoint Variables
+--------------------------------------------------------------*/
+$xs: 400px;
+$smx: 500px;
+$sm: 575px;
+$md: 767px;
+$ls: 900px;
+$lg: 1024px;
+$xl: 1199px;
+$xxl: 1400px;
+$xxxl: 1560px;
